@@ -40,7 +40,8 @@ class Application < Sinatra::Base
         @mailaddrs = value
       end
     end
-    if params.values.select {|value| value.match(ENV['SPAM_FILTER']) }.any?
+    if !ENV['SPAM_FILTER'].to_s.empty? &&
+        params.values.select {|value| value.match(ENV['SPAM_FILTER']) }.any?
       logger.error 'Matched spam filter'
       @title = I18n.t(:send_failure)
       slim :failure
