@@ -10,12 +10,12 @@ Receive informations from static HTML form, and then send e-mail.
 
 ### FORMS
 
-(Required) Pairs of the form and mail destination. JSON format. 
+(Required) Pairs of the form and mail destination. JSON format.  
 Ex:`{"http://example.com/form1": ["mail1@example.com"], "http://example.com/form2": ["mail2@example.com", "mail3@example.com"]}`
 
 ### SPAM_FILTER
 
-(Optional) RegExp. 
+(Optional) RegExp.  
 Ex:`(spam message|spam-.*?\.example\.com)`
 
 ### MAIL_FROM
