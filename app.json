@@ -1,0 +1,12 @@
+{
+  "name": "mailform-action",
+  "env": {
+    "FORMS": "{\"http://example.com/contat.html\": [\"sendto@example.com\"]}",
+    "SMTP_DOMAIN": "heroku.com",
+    "SMTP_HOST": "smtp.sendgrid.net",
+    "SMTP_PORT": "587"
+  },
+  "addons": [
+    "sendgrid"
+  ]
+}

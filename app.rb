@@ -18,11 +18,11 @@ class Application < Sinatra::Base
   end
 
   set :delivery_method, ENV['DELIVERY_METHOD'] || 'smtp' => {
-    address: ENV['SMTP_HOST'],
+    address: ENV['SMTP_HOST'] || 'localhost',
     port: ENV['SMTP_PORT'] || 25,
-    user_name: ENV['SMTP_USERNAME'],
-    password: ENV['SMTP_PASSWORD'],
-    authentication: ENV['SMTP_AUTHENTICATION'],
+    user_name: ENV['SMTP_USERNAME'] || ENV['SENDGRID_USERNAME'],
+    password: ENV['SMTP_PASSWORD'] || ENV['SENDGRID_PASSWORD'],
+    authentication: ENV['SMTP_AUTHENTICATION'] || 'plain',
     enable_starttls_auto: ENV['SMTP_ENABLE_STARTTLS_AUTO'] != 'false'
   }
 

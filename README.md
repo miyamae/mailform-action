@@ -1,6 +1,8 @@
 Backend for Static Form
 =======================
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 Receive informations from static HTML form, and then send e-mail.
 
 * Available on Heroku
