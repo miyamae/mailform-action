@@ -1,0 +1,5 @@
+en:
+  send_success: Complete
+  send_failure: Failure
+  countdown: "You will automatically %{goback} after %{time} seconds."
+  goback: back to the page

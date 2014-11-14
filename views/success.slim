@@ -1,0 +1,7 @@
+dl.dl-horizontal
+  - params.each do |key, value|
+    - if key !~ /^_/
+      dt = key
+      dd = value
+
+= slim :redirect_back

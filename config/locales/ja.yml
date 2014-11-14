@@ -1,0 +1,5 @@
+ja:
+  send_success: 送信しました
+  send_failure: 送信できませんでした
+  countdown: "%{time} 秒後に%{goback}。"
+  goback: 元のページへ戻ります

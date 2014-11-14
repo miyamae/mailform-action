@@ -1,0 +1,10 @@
+.rvmrc
+.ruby-version
+/vendor/bundle
+/log/*
+/tmp/*
+.DS_Store
+.#*
+*~
+*.sublime-project
+*.sublime-workspace
