@@ -52,7 +52,7 @@ class Application < Sinatra::Base
     else
       @mailaddrs.each do |mailaddr|
         email(
-          from: ENV['MAIL_FROM'] || 'no-replay@example.com',
+          from: ENV['MAIL_FROM'] || 'no-reply@example.com',
           to: mailaddr,
           subject: '[Contact] ' + URI.parse(@url).host,
           locals: { url: @url, params: params },
